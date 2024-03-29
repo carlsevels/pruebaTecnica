@@ -40,4 +40,8 @@ const count = ref(0)
 #encabezadoChat{
   margin-bottom: 16.0px;
 }
+
+#mensajes{
+  height: 400px;
+}
 </style>
