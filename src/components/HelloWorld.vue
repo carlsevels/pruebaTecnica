@@ -67,13 +67,12 @@ watch(selected, (name) => {
 function create() {
   if (hasValidInput()) {
     const fullName = `${first.value}`
-    if (!names.includes(fullName)) {
+    
       names.push(fullName)
       first.value = ''
-    }
+    
   }
 }
-
 
 function hasValidInput() {
   return first.value.trim()
