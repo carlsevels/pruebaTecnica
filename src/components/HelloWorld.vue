@@ -31,15 +31,15 @@
           </v-toolbar>
           <v-col>
             <v-list id="mensajes" class="justify-end" align="right" lines="two">
-              <v-list-item v-for="name in filteredNames" :key="name" :title="name"
+              <v-list-item v-for="name in filteredMensajes" :key="name" :title="name"
                 :prepend-avatar="'https://randomuser.me/api/portraits/women/8.jpg'"></v-list-item>
             </v-list>
             <v-row>
-              <v-col cols="11">
+              <v-col cols="10">
                 <v-text-field v-model="first" label="Escribir mensaje..." clearable variant="underlined">
                 </v-text-field>
               </v-col>
-              <v-col cols="1">
+              <v-col cols="2">
                 <v-btn @click="create">Enviar</v-btn>
               </v-col>
             </v-row>
@@ -53,25 +53,25 @@
 <script setup>
 import { computed, reactive, ref, watch } from 'vue';
 
-const names = reactive([])
+const mensajeList = reactive([])
 const selected = ref('')
 const prefix = ref('')
 const first = ref('')
 
-const filteredNames = computed(() =>
-  names.filter((n) =>
+const filteredMensajes = computed(() =>
+mensajeList.filter((n) =>
     n.toLowerCase().startsWith(prefix.value.toLowerCase())
   )
 )
 
-watch(selected, (name) => {
-  ;[first.value] = name.split(', ')
+watch(selected, (mensaje) => {
+  ;[first.value] = mensaje.split(', ')
 })
 
 function create() {
   if (hasValidInput()) {
     const fullName = `${first.value}`
-    names.push(fullName)
+    mensajeList.push(fullName)
     first.value = ''
   }
 }
