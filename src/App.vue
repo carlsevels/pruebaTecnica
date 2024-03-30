@@ -44,4 +44,12 @@ const count = ref(0)
 #mensajes{
   height: 400px;
 }
+
+#mensajeUser{
+  width: max-content;
+  background-color: blue;
+  border-radius: 8.0px;
+  margin-right: 8.0px;
+  margin-bottom: 8.0px
+}
 </style>

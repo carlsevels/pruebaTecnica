@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "@mdi/font": "6.2.95",
+    "mysql2": "^3.9.3",
     "roboto-fontface": "*",
+    "sequelize": "^6.37.2",
     "vue": "^3.4.21",
     "vuetify": "^3.5.8"
   },

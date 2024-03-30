@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Velezcarlos",
+    "database": "vue",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Velezcarlos",
+    "database": "vue",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Velezcarlos",
+    "database": "vue",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

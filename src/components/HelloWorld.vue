@@ -31,12 +31,13 @@
           </v-toolbar>
           <v-col>
             <v-list id="mensajes" class="justify-end" align="right" lines="two">
-              <v-list-item v-for="name in filteredMensajes" :key="name" :title="name"
-                :prepend-avatar="'https://randomuser.me/api/portraits/women/8.jpg'"></v-list-item>
+              <v-list-item id="mensajeUser" v-for="name in filteredMensajes" :key="name" :title="name"
+                subtitle="Enviado"></v-list-item>
             </v-list>
             <v-row>
               <v-col cols="10">
-                <v-text-field v-model="first" label="Escribir mensaje..." clearable variant="underlined">
+                <v-text-field id="inputMensaje" @keydown.enter="create" v-model="first" label="Escribir mensaje..." clearable
+                  variant="underlined">
                 </v-text-field>
               </v-col>
               <v-col cols="2">
@@ -59,7 +60,7 @@ const prefix = ref('')
 const first = ref('')
 
 const filteredMensajes = computed(() =>
-mensajeList.filter((n) =>
+  mensajeList.filter((n) =>
     n.toLowerCase().startsWith(prefix.value.toLowerCase())
   )
 )
@@ -76,7 +77,15 @@ function create() {
   }
 }
 
+// var input = document.getElementById("inputMensaje");
+// input.addEventListener("keyup", function (event) {
+//   if (event.keyCode === 13) {
+//     create();
+//   }
+// });
+
 function hasValidInput() {
   return first.value.trim()
 }
+
 </script>
