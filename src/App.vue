@@ -52,4 +52,7 @@ const count = ref(0)
   margin-right: 8.0px;
   margin-bottom: 8.0px
 }
+#profilePhoto{
+  border-radius: 100%;
+}
 </style>
