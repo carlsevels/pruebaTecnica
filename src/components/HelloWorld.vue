@@ -19,9 +19,10 @@
           </v-card>
         </v-col>
         <v-col cols="9">
-          <v-toolbar image="https://cdn.vuetifyjs.com/images/parallax/material.jpg" border id="encabezadoChat">
+          <v-toolbar border id="encabezadoChat">
             <div class="ma-4">
-              <v-img id="profilePhoto" :aspect-ratio="1" class="bg-white" src="https://media.revistagq.com/photos/606b3183a359af169e483dcb/16:9/w_2560%2Cc_limit/estar-guapo.jpeg"
+              <v-img id="profilePhoto" :aspect-ratio="1" class="bg-white"
+                src="https://media.revistagq.com/photos/606b3183a359af169e483dcb/16:9/w_2560%2Cc_limit/estar-guapo.jpeg"
                 width="50" cover></v-img>
             </div>
             <v-toolbar-title>Carlos Velez</v-toolbar-title>
@@ -35,8 +36,9 @@
           </v-toolbar>
           <v-col>
             <v-list id="mensajes" class="justify-end" align="right" lines="two">
-              <v-list-item id="mensajeUser" v-for="name in filteredMensajes" :key="name" :title="name"
-                subtitle="Enviado"></v-list-item>
+              <v-list-item  color="red" id="mensajeUser" v-for="name in filteredMensajes" :key="name" :title="name"
+                subtitle="Enviado">
+              </v-list-item>
             </v-list>
             <v-row>
               <v-col cols="10">
