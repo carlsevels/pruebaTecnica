@@ -36,7 +36,7 @@
           </v-toolbar>
           <v-col>
             <v-list id="mensajes" class="justify-end" align="right" lines="two">
-              <v-list-item  color="red" id="mensajeUser" v-for="name in filteredMensajes" :key="name" :title="name"
+              <v-list-item color="red" id="mensajeUser" v-for="name in filteredMensajes" :key="name" :title="name"
                 subtitle="Enviado">
               </v-list-item>
             </v-list>
@@ -93,5 +93,4 @@ function create() {
 function hasValidInput() {
   return first.value.trim()
 }
-
 </script>
