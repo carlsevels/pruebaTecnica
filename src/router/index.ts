@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import About from '../views/About.vue';
 import Album from '../views/Album.vue';
+import Chat from '../views/Chat.vue';
 import GetList from '../views/GetList.vue';
 import Home from '../views/Home.vue';
 import Posts from '../views/Posts.vue';
@@ -39,6 +40,11 @@ const routes = [
         name: 'Album',
         component: Album,
         props: true
+    },
+    {
+        path: '/chat',
+        name: 'Chat',
+        component: Chat
     }
 ]
 

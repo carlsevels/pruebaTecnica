@@ -16,8 +16,10 @@ const count = ref(0)
             value="Home">Home</v-list-item></router-link>
         <router-link id="links" :to="{ name: 'About' }"><v-list-item prepend-icon="mdi-information" title="About"
             value="About">About</v-list-item></router-link>
-        <router-link id="links" :to="{ name: 'GetList' }"><v-list-item prepend-icon="mdi-account" title="Users"
+        <router-link id="links" :to="{ name: 'GetList' }"><v-list-item prepend-icon="mdi-account" title="GetList"
             value="GetList">Users</v-list-item></router-link>
+        <router-link id="links" :to="{ name: 'Chat' }"><v-list-item prepend-icon="mdi-chat" title="Chat"
+            value="Chat">Users</v-list-item></router-link>
       </v-list>
     </v-navigation-drawer>
     <v-main>
@@ -27,12 +29,12 @@ const count = ref(0)
 </template>
 <style src="../css/index.css"></style>
 <script>
-  export default {
-    data () {
-      return {
-        drawer: true,
-        rail: true,
-      }
-    },
-  }
+export default {
+  data() {
+    return {
+      drawer: true,
+      rail: true,
+    }
+  },
+}
 </script>
