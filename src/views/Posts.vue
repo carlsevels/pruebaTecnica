@@ -1,6 +1,7 @@
 <template>
     <div>
         <h1>Perfil de {{ getUser.name }}</h1>
+        <h2>Posts</h2>
         <v-list lines="one">
             <v-list-item v-for="posts in getPost" :key="n" :title="posts.title" :subtitle="posts.title">
                 <router-link id="posts" :to="{ name: 'Publicacion', params: { id: posts.id } }">
@@ -10,7 +11,7 @@
                 </router-link>
             </v-list-item>
         </v-list>
-        <h1>Albums</h1>
+        <h2>Albums</h2>
         <v-list class="horizontal-list">
             <v-list-item v-for="albums in getAlbumOfUser" :key="albums.id">
                 <router-link id="posts" :to="{ name: 'Album', params: { id: albums.id } }"> <v-card
