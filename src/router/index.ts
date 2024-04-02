@@ -5,6 +5,7 @@ import Chat from '../views/Chat.vue';
 import GetList from '../views/GetList.vue';
 import Home from '../views/Home.vue';
 import Posts from '../views/Posts.vue';
+import Productos from '../views/Productos.vue';
 import Publicacion from '../views/Publicacion.vue';
 
 const routes = [
@@ -45,6 +46,11 @@ const routes = [
         path: '/chat',
         name: 'Chat',
         component: Chat
+    },
+    {
+        path: '/productos',
+        name: 'Productos',
+        component: Productos
     }
 ]
 

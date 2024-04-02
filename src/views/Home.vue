@@ -1,5 +1,5 @@
 <template>
     <div>
-        HomeIsWorking
+        HomeViewIsWorking
     </div>
 </template>
