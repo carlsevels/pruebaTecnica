@@ -20,8 +20,10 @@ const count = ref(0)
             value="GetList">Users</v-list-item></router-link>
         <router-link id="links" :to="{ name: 'Chat' }"><v-list-item prepend-icon="mdi-chat" title="Chat"
             value="Chat">Users</v-list-item></router-link>
-        <router-link id="links" :to="{ name: 'Productos' }"><v-list-item prepend-icon="mdi-home" title="Productos"
-            value="Productos">Productos</v-list-item></router-link>
+        <!-- <router-link id="links" :to="{ name: 'Productos' }"><v-list-item prepend-icon="mdi-home" title="Productos"
+            value="Productos">Productos</v-list-item></router-link> -->
+        <!-- <router-link id="links" :to="{ name: 'AddPost' }"><v-list-item prepend-icon="mdi-post" title="Nuevo Post"
+            value="Nuevo Post">Nuevo Post</v-list-item></router-link> -->
       </v-list>
     </v-navigation-drawer>
     <v-main>

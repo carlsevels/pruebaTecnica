@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import About from '../views/About.vue';
+import AddPost from '../views/AddPost.vue';
 import Album from '../views/Album.vue';
 import Chat from '../views/Chat.vue';
 import GetList from '../views/GetList.vue';
@@ -51,7 +52,13 @@ const routes = [
         path: '/productos',
         name: 'Productos',
         component: Productos
-    }
+    },
+    {
+      path: '/addPost/:id',
+      name: 'AddPost',
+      component: AddPost,
+      props: true
+  }
 ]
 
 const router = createRouter({
